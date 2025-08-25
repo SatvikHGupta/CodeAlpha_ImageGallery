@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Gallery</h1>
+    <nav class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="people">People</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid" id="grid">
+      <figure class="card" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Nature" />
+        <figcaption>Nature</figcaption>
+      </figure>
+      <figure class="card" data-category="city">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b" alt="City" />
+        <figcaption>City</figcaption>
+      </figure>
+      <figure class="card" data-category="people">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="People" />
+        <figcaption>People</figcaption>
+      </figure>
+      <figure class="card" data-category="abstract">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Abstract" />
+        <figcaption>Abstract</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <div class="lightbox hidden" id="lightbox">
+    <button class="close" id="lbClose">&times;</button>
+    <button class="nav prev" id="lbPrev">&#10094;</button>
+    <img id="lbImg" src="" alt="Preview" />
+    <button class="nav next" id="lbNext">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
